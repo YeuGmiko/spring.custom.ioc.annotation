@@ -12,7 +12,7 @@
    >
    > - @Component
    > - @Controller
-   > - @Service
+   > - @Servicez
    > - @Repository
    > - @Autowired
 
@@ -62,3 +62,31 @@
   > @Autowired("customBeanName")
 
 - 属性注入时，若该属性类型没有对应的Bean对象，则会抛出错误
+
+# 使用-Maven
+
+打包后获得`Custom-Spring-Ioc-1.0.0.jar`文件，放置在项目根目录lib目录中
+
+```test
+==Project
+	——lib
+		+Custom-Spring-Ioc-1.0.0.jar
+	——src
+		——main
+			——java
+			——resource
+		——test
+```
+
+在pom.xml中`<dependencies>`标签中添加如下内容
+
+```xml
+<dependency>
+    <groupId>com.spring.custom</groupId>
+    <artifactId>Custom-Spring-Ioc</artifactId>
+    <version>1.0.0</version>
+    <scope>system</scope>
+    <systemPath>${project.basedir}/lib/Custom-Spring-Ioc-1.0.0.jar</systemPath>
+</dependency>
+```
+
