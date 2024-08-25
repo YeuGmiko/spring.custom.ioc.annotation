@@ -69,13 +69,13 @@
 
 ```test
 ==Project
-	——lib
-		+Custom-Spring-Ioc-1.0.0.jar
-	——src
-		——main
-			——java
-			——resource
-		——test
+  ——lib
+    +Custom-Spring-Ioc-1.0.0.jar
+  ——src
+    ——main
+      ——java
+      ——resource
+    ——test
 ```
 
 在pom.xml中`<dependencies>`标签中添加如下内容
