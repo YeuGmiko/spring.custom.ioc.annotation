@@ -12,7 +12,7 @@
    >
    > - @Component
    > - @Controller
-   > - @Servicez
+   > - @Service
    > - @Repository
    > - @Autowired
 
@@ -76,6 +76,7 @@
       ——java
       ——resource
     ——test
+  +pom.xml
 ```
 
 在pom.xml中`<dependencies>`标签中添加如下内容
